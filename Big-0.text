@@ -1,0 +1,106 @@
+Problem 1.) ----------------------------------
+    THE Big 0 notation represents the computational difficulty of a task as the data increases 
+    - In my own words, Big 0 tests the time and space complexity of a task. Using the most effective algrithm helps with the speed at which the applications runs and how much memory is allocated.
+
+Problem 2.)-----------------------------------
+    0(1)- Constant - 1 Best run time, No matter the size the time will remain constant
+
+        Examples: Pushing/Removing elements to the end of an Array
+                  Adding 2 numbers 
+                  Retrieving an item at a particular index   
+
+    0(logn)- Log - 2 When the time execution is proportional to the logarithm of the input size
+                    0(log n) never looks at all the elements in the array
+
+        Examples: for loop does not loop through every element in the array
+                  Rather than a for loop i++ if we use i*= we will not iterate through every item  
+    0(n)- Linear - 3 1 : 1 relationship between data size and time completion
+                         All loops [for...loop, while loop, map(), forEach() ] are by default linear
+        Examples: An array with 25 numbers will take x25 longer than an array with 1 number
+
+    O(n^2)- Quadratic - 4 Increasing the size of the input by a multiplication factor (n * n)
+                          When you have a loop inside of a loop(nested loops)
+        Examples: If we have a loop iterating through an array with 100 items and another loop inside iterating through an array with another 100 items, that doubles to 1000, too much iterating going on
+
+    0(n!)- Factorial - 5 Worst possible run time, very rare to see this
+                        const factorial = n => {
+                            let num = n
+                            if ( n=== 0) return 1;
+
+                            for(let i = 0; i < n; i++) {
+                                num = n * factorial(n - 1)
+                            }
+                            return num;
+                        }
+        Examples:  5! -> 5 x 4 x 3 x 2 x 1
+
+
+Problem 3.) ----------------------------------
+Three reasons we care for Big 0 and are code preformance:
+    1.) Time is money, if the user experience isn't good neither is the bottom line.
+    2.) Scalablity of the application.
+    3.) Looking at the bigger picture 
+
+Problem 4.) ----------------------------------
+    The problem using a time method like preformance.now() to measure how fast our codes runs is everyones machine will produce a different run time, making the measurement unreliable.
+
+Problem 5.) ----------------------------------
+    n^2
+
+Prblem 6.) ----------------------------------
+    n^3 
+
+Problem 7.) ----------------------------------
+    Because with Big 0 we are looking at the bigger picture, on a big scale application additional constants is'nt too relevant because it is'nt nested (side by side). In Big 0 we drop constants (following the trend, we don't care about the details).
+
+Problem 8.) ---------------------------------- 
+    Space complexity is the amount of memory it takes to store. 
+
+Problem 9.) ----------------------------------
+    - Boolean = Constants 
+    - Undefined = Constants
+    - Null = Constants
+    - Numbers = Constants
+    - String = Linear
+    - Array =  Linear or Constant, if it's fixated it's a constant
+    - Object = Linear
+ 
+Problem 10.) ----------------------------------
+     If it's a single entity with named properties, you want an object. If it's a group of entities of the same type, or if order matters, you want an array.
+
+Problem 11.) ----------------------------------
+    1.) 0(1)
+    2.) 0(1)
+    3.) 0(n)
+    4.) 0(n)
+    5.) 0(n)
+    6.) 0(n)
+    7.) 0(n)
+
+Problem 12.) -----------------------------------
+    1.) 0(1)
+    2.) 0(n)
+    3.) 0(1)
+    4.) 0(n)
+    5.) 0(n)
+    6.) 0(n)
+    7.) 0(1)
+    8.) 0(n)
+    9.) 0(n)
+    10.) 0(n)
+    11.) 0(n)
+    12.) 0(1)
+    13.) 0(1)
+
+Problem 13.) -----------------------------------
+    1.) 0(n) Constant
+    2.) 0(n) Constant
+    3.) 0()
+    4.) 0()
+    5.) 0()
+    6.) 0()
+    7.) 0()
+    8.) 0()
+    9.) 0()
+    10.) 0()
+
